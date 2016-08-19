@@ -3,65 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style media="screen">
-      img{
-        position: absolute;
-      }
-      #rightSide {
-              left: 500px;
-              border-left: 1px solid black
-            }
-              #leftSide{
-                width: 500px;
-                height: 500px;
-                border-right: 1px solid black
-              }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css">
   </head>
   <body>
     <div id='leftSide' class="">
     </div>
     <div id='rightSide' class="">
     </div>
-      <script type="text/javascript">
-      var p = Math.random() * 400;
-      var d = Math.random() * 100;
-      var s = Math.round(d);
-      var m = Math.round(p);
-      function  img(){
-      var elem = document.createElement("img");
-      elem.src = 'https://pbs.twimg.com/profile_images/473506797462896640/_M0JJ0v8.png';
-      elem.width = '50';
-      elem.height = '50';
-      elem.id = 'oldImg';
-      elem.style.left = m + 'px';
-      elem.style.top = s + '%';
-      document.getElementById("leftSide").appendChild(elem);
-          }
-          img();
-            var z = 1;
-          function imgTwo(){
-            for (var i = 0; i < 5; i++) {
-              var p = Math.random() * 400;
-              var d = Math.random() * 100;
-              var s = Math.round(d);
-              var m = Math.round(p);
-            var elem = document.createElement("img");
-            elem.src = 'https://pm-content.cdn.prismic.io/pm-content/f5d1d11406475b05ae56e6c33972d51918ee00aa_picmonkey_home_01.jpg';
-            elem.width = '50';
-            elem.height = '50';
-            elem.id = 'newImg';
-            elem.style.left = m + 'px';
-            elem.style.top = s + '%';
-            document.getElementById("rightSide").appendChild(elem);
-            }
-          }
-          // function gameOver(){
-          //   alert('Game Over');
-          //
-          // }
-          // document.getElementsById('newImg').addEventListener('click', gameOver);
-          document.getElementById("leftSide").addEventListener("click", imgTwo);
+      <script src=script.js>
       </script>
   </body>
 </html>
